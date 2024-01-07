@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<div lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title> LEGO - Đồ Chơi Chính Hãng - Thế Giới Đồ Chơi </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
+
+  </head>
+
+  <body>
+    <header>
+      <!--nav-->
+      <nav class="nav__container">
+        <div class="nav__left">
+          <div class="items__center">
+            <i class="fa fa-usd"></i>
+            <p>Cam kết giá tốt</p>
+          </div>
+          <div class="items__center">
+            <i class="fa-solid"></i>
+            <p>Dễ vận chuyển</p>
+          </div>
+          <div class="items__center">
+            <i class="fa fa-handshake"></i>
+            <p>Thanh toán khi nhận hàng</p>
+          </div>
+          <div class="items__center">
+            <i class="fa fa-history"></i>
+            <p>Bảo hành tận nơi</p>
+          </div>
+        </div>
+
+        <!--Dang nhap-->
+        <div class="nav__right">
+          <div class="items__center">
+            <a href="dangnhap.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+
+          <!--gio hang-->
+          <div class="items__center">
+            <a href="giohang.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+          </div>
+        </div>
+      </nav>
+
+      <!--header-->
+      <div class="header__container">
+        <div class="logo">
+          <img src="/images/Ảnh chụp màn hình 2023-11-27 144547.png" />
+        </div>
+
+        <!--tìm kiếm-->
+        <div class="search">
+          <div class="input">
+            <input type="text" placeholder="Nhập để tìm kiếm sản phẩm..." />
+          </div>
+          <div class="btn__submit">
+            <button>
+              <i class="fa-solid fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <!--hotline-->
+        <div class="hotline">
+          <p>Mua hang online</p>
+          <p>0363236761</p>
+        </div>
+      </div>
+    </header>
+
+    <!--menu-->
+    <div class="menu_container">
+      <ul class="menu clearfix">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li>
+          <a href="#">Danh Mục Sản Phảm</a>
+          <ul>
+            <li><a href="#">Bộ LEGO Độc Quyền</a></li>
+            <li><a href="#">Bộ Biểu Tượng Lego</a></li>
+            <li><a href="#">Bộ Đồ Chơi Marvel</a></li>
+            <li><a href="#">Bộ Đồ Chơi Star Wars</a></li>
+            <li><a href="#">Đồ chơi LEGO Creator 3in1</a></li>
+            <li><a href="#">Khác</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Ưu Đãi Và Giảm Giá</a></li>
+        <li><a href="TinTuc.html">Tin Tức</a></li>
+        <li><a href="LienHe.html">Liên Hệ</a></li>
+      </ul>
+    </div>
+
+    <!-- myslides -->
+    <div class="slideshow__container">
+      <h2></h2>
+      <div class="mySlides fade">
+        <img src="./images/slider1.png" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/slider2.png" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/slider3.png" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/slider4.png" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/slider5.png" style="width:100%">
+        <div class="text">!</div>
+      </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <!--phần sp-->
+    <!--GIẢM GIÁ ĐẶC BIỆT-->
+
+    <p id="sale"><strong> SẢN PHẨM GIẢM GIÁ </strong></p>
+    <div class="content">
+      <p id="title"><strong></strong></p>
+      <div class="layers">
+        <div class="layer1">
+          <!-- <div class="layer_item">
+          <div class="img_sp">
+            <a class="sp" href="chitietsp.html"
+              ><img src="/images/loz-1722-1723-1724-1725-4-loai-hinh-quan-bun-tiem-cam-do-nha-hang-ren.jpg" alt=""
+            /></a>
+          </div>
+          <div class="ten">
+            <p id="tensp"><strong>LoZ</strong></p>
+            <br />
+            <div class="ten_items">
+              Lego 4 LOẠI HÌNH QUÁN BÚN TIỆM CẦM ĐỒ NHÀ HÀNG RÈN Đường Phố Thu Nhỏ LOZ
+            </div>
+          </div>
+          <div class="gia_items">
+            <p class="giam">500,000đ</p>
+            <p class="gia">350,000đ</p>
+          </div>
+        </div> -->
+<!-- link , ten, mota, giacu, giamoi, -->
+
+        </div>
+      </div>
+
+
+      <!--   SẢN PHẨM NỔI BẬT      -->
+      <p id="sale"><strong> SẢN PHẨM NỔI BẬT </strong></p>
+      <div class="layers">
+        <div class="layer1">
+          <!-- <div class="layer_item">
+          <div class="img_sp">
+            <a class="sp" href="#"><img src="/images/noibat (1).png" alt="" /></a>
+          </div>
+          <div class="ten">
+            <p id="tensp"><strong>Lego</strong></p>
+            <br />
+            <div class="ten_items">
+              Mô hình cây nhỏ nhiều loại
+            </div>
+          </div>
+          <div class="gia_items">
+            <p class="giam">1,199,000đ</p>
+            <p class="gia">900,000đ</p>
+          </div>
+        </div> -->
+
+
+        </div>
+      </div>
+
+
+      <p id="sale"><strong> MỚI 2024 </strong></p>
+      <div class="content">
+        <p id="title"><strong></strong></p>
+        <div class="layers">
+          <div class="layer1">
+            <!-- <div class="layer_item">
+            <div class="img_sp">
+              <a class="sp" href="chitietsp.html"><img src="/images/moi1.png" alt="" /></a>
+            </div>
+            <div class="ten">
+              <p id="tensp"><strong>LoZ</strong></p>
+              <br />
+              <div class="ten_items">
+                Bó hoa hồng
+              </div>
+            </div>
+            <div class="gia_items">
+              <p class="giam">243,000đ</p>
+              <p class="gia">199,000đ</p>
+            </div>
+          </div> -->
+
+
+          </div>
+        </div>
+        <!--footder-->
+        <footer>
+          <div class="footer__container">
+            <div class="row__footer">
+              <h3>VỀ CHÚNG TÔI</h3>
+              <ul class="menu_footer">
+                <li><a href="#">Giới thiệu về Tập đoàn LEGO</a></li>
+                <li><a href="#">Tin tức LEGO</a></li>
+                <li><a href="#">Sự bền vững</a></li>
+                <li><a href="#">Tuyên bố minh bạch về chuỗi cung ứng</a></li>
+                <li><a href="#">Chứng nhận sản phẩm LEGO</a></li>
+              </ul>
+            </div>
+            <div class="row__footer">
+              <h3>ỦNG HỘ</h3>
+              <ul class="menu_footer">
+                <li><a href="#">Liên hệ chúng tôi</a></li>
+                <li><a href="#">Tìm hướng dẫn xây dựng</a></li>
+                <li><a href="#">Vận chuyển và trả lại</a></li>
+                <li><a href="#">Phương thức thanh toán</a></li>
+                <li><a href="#">Điều khoản và điều kiện</a></li>
+                <li><a href="#">Thu hồi sản phẩm </a></li>
+              </ul>
+            </div>
+            <div class="row__footer">
+              <h3>ĐIỂM THAM QUAN</h3>
+              <ul class="menu_footer">
+                <li><a href="#">Ngôi nhà LEGO</a></li>
+                <li><a href="#">Công viên LEGOLAND</a></li>
+                <li><a href="#">Trung tâm khám phá LEGOLAND</a></li>
+              </ul>
+            </div>
+            <div class="row__footer">
+              <h3>THÔNG TIN KHÁC TỪ CHÚNG TÔI</h3>
+              <ul class="menu_footer">
+                <li><a href="#">LEGO CUỘC SỐNG</a></li>
+                <li><a href="#">LEGO Giáo dục</a></li>
+                <li><a href="#">Quỹ LEGO</a></li>
+                <li><a href="#">Chương trình liên kết</a></li>
+                <li><a href="#">Ưu đãi dành cho sinh viên</a></li>
+                <li><a href="#">Ưu đãi đanh cho phụ huynh</a></li>
+                <li><a href="#">Gạch chữ nổi LEGO </a></li>
+              </ul>
+            </div>
+            <div class="row__footer">
+              <h3>THEO DÕI CHÚNG TÔI</h3>
+              <ul class="social-links">
+                <a href="https://www.facebook.com/LEGO?mibextid=kFxxJD"> <i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </ul>
+            </div>
+          </div>
+      </div>
+
+
+      <script src="./js/index.js"></script>
+  </body>
+
+</html>

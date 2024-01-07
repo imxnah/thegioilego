@@ -1,0 +1,465 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.div{
+    display:block;
+}
+P{
+    font-size: 18px;
+}
+
+.nav__container {
+    background: #d64d4d;
+    color: #FFF;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+     */
+    /* padding: 1px 2px 3px 4px; */
+    /* 
+    1px: top,
+    2px: right,
+    3px: bottom,
+    4px: left
+    */
+
+    /* 
+    padding: 10px 20px;
+    10px: top & bottom;
+    20px: left & right;
+    */
+
+     /* cho 4 cạnh */
+    padding: 10px;
+
+}
+
+
+.nav__container .nav__left, .nav__right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.nav__left .items__center, .nav__right .items__center {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+}
+
+
+.nav__left .items__center:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.nav__right .items__center:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+
+/* header */
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+
+.header__container .logo {
+    max-width: 120px;
+    max-height: 120px;
+
+}
+
+.header__container .logo img {
+    padding : 10px 2px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.header__container .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex: 1;
+}
+
+.header__container .search .input  {
+    width: 100%;
+    max-width: 604px;
+} 
+
+.header__container .search .input input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border: 0.1px solid gray;
+    border-radius: 5px;
+} 
+
+.header__container .search .btn__submit button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border: 0.1px solid gray;
+    border-radius: 5px;
+    background: #d84c4c;
+    color: #fff;
+}
+
+
+.header__container .search .btn__submit button:hover {
+    cursor: pointer;
+}
+
+
+.header__container .hotline {
+   padding: 10px 20px;
+   border: 0.1px solid gray;
+   border-radius: 5px;
+}
+
+/*menu*/
+
+.menu_container{
+    max-width: 1200px 40;
+    margin: 10px auto 5;
+    display: block;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+    position: sticky; /*Cho menu cố định 1 vị trí với top */
+    top: 0; /*Nằm trên cùng*/
+    left: 0; /*Nằm sát bên trái*/
+    z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+ul{
+    list-style-type: none;
+}
+/* build class clearfix để giải quyết float*/
+.clearfix:before, .clearfix::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+.menu{
+    background: #d84c4c;
+    text-align: center;
+}
+/* style menu cấp 1 */
+.menu > li{
+    float:left;
+    position: relative;
+}
+.menu > li a{
+    display: block;
+    font-size: 16px;
+    padding:10px 15px;
+    color: #ece4e4;
+    text-decoration: none;
+}
+.menu > li a:hover, .menu li:hover > a:hover {
+    background: #d84c4c;
+    color: orange;
+    cursor: pointer;
+}
+/* style menu cấp 2 */
+.menu ul{
+    position: absolute;
+    top:100%;
+    left:0;
+    min-width: 200px ;
+    background: #d52f2f;
+    /*display: none;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.menu ul ul{
+    top:0;
+    left: 150%;
+}
+.menu ul li{
+    text-align: left;
+}
+/* style khi hover li, shoư menu con của li đó */
+.menu li:hover > ul{
+    /*display: block;*/
+    visibility: visible;
+    opacity: 1;
+    top:100%;
+}
+.menu ul li:hover >ul{
+    visibility: visible;
+    opacity: 1;
+    left:100%;
+}
+
+/* mySlides 
+
+  /* Slideshow container */
+  .Slideshow__container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+  /* Ẩn các slider */
+  .mySlides {
+      display: none;
+  }
+  /* Định dạng nội dung Caption */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+   
+  /* định dạng các chấm chuyển đổi các slide */
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  /* khi được hover, active đổi màu nền */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+   
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+   
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+   
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*content*/
+.content{
+    height:400px;
+    width:100%;
+    display: block;
+
+}
+
+#title{
+    margin-bottom:15px;
+    font-size: 15px;
+    margin-left:30px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.layers {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.layer1 {
+    display: flex;
+    justify-content:space-between;
+    padding:12px;
+
+}
+.layer_item {
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    border-radius:30px;
+    margin-left:20px;
+    width:auto;
+}
+.img_sp img{
+    width:300px;
+    height:270px;
+    display:flex;
+    align-items: center;
+    image-rendering: pixelated;
+    border-radius: 10px;
+}
+.sp:hover img{
+    max-width: 100%;
+    transform:scale(1.1);
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.ten{
+    width: 200px;
+    height:60px;
+    margin-left:5px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4px;
+    font-size: 13px; 
+}
+#tensp{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; 
+}
+.ten_items{ 
+    width:190px;
+    height:45px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ten_items{
+    text-overflow: ellipsis;
+}
+
+.gia_items{
+    width:285px;
+    height:50px;
+}
+
+.giam{
+    float: left;
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #828282;
+    width: 280px;
+    height: 15px;
+    display:flex;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.gia{
+    font-weight: bold;
+    color:rgb(100, 4, 25);
+    width: 285px;
+    height:15px;
+    margin-left:10px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.product-rating{
+    font-weight: bold;
+    color:rgb(100, 4, 25);
+    margin-left:10px;
+    font-size: 12px;
+    height: 15px;
+    margin-top: 5px;
+}
+#daban{
+    font-family: 'Nunito Sans', sans-serif;
+}
+/* sp gai uu dai */
+#sale{
+    margin-top:20px;
+    margin-left: 50px;
+    width:200px;
+}
+.hihi{
+    background-color:  #d52f;
+    margin-top:10px ;
+    margin-left: 40px;
+    margin-right: 30px;
+    font-size:15px ;
+    border-radius: 30px;
+    border: 3px solid #d52f;
+}
+.hot{ 
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 50px;
+    background-color:#d84c4c;
+    color:aliceblue;
+    border:none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+/* footer */
+.footer__container{
+    display:flex;
+    justify-content: 0;
+    background: #d84c4c ;/*rgb(32, 29, 72);*/
+    gap:50px;
+    padding: 10px 10px 20px 20px;
+    width: 100%;
+    color : #FFF;
+}
+.row_footer{
+    color: #FFF ;
+    background-color: #FFF;
+}
+.menu_footer{
+    list-style: none;
+    color: #ffffff;
+    background-color: #d84c4c;
+}
+
+.menu_footer li a {
+    text-decoration: none;
+    color: #FFF;
+}
+.menu_footer li a:hover{
+    color: orange;
+    cursor: pointer;
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-top:20px;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #ede5e5;
+    border:1px solid #e0d1d1;
+    margin:  0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background-color: #e3cccc;
+    border-color: transparent;
+    color:#272222;
+}
+.text {
+    margin:30px;
+}

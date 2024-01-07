@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/manage.css">
+</head>
+
+<body>
+    <div class="nav">
+        <i class="material-icons active">home</i>
+        <i class="material-icons">favorite</i>
+        <i class="material-icons">attachment</i>
+        <i class="material-icons">computer</i>
+        <i class="material-icons">traffic</i>
+    </div>
+    <div class="form">
+        <div>
+            <input name="ID" id="ID" placeholder="ID">
+            <input type="file" id="File" accept=".jpg">
+            <input name="Name" id="Name" placeholder="Ten">
+            <input name="Des" id="Des" placeholder="Mo ta">
+            <input name="Old" id="Old" placeholder="gia cu">
+            <input name="New" id="New" placeholder="gia moi">
+            <button onclick="updateoradd()">SUBMIT</button>
+        </div>
+    </div>
+    <div class="table">
+        <table id="tableid">
+            <!-- <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Old Price</th>
+                <th>New Price</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="./images/198989.jpg" alt="" width="100px"></td>
+                <td>Name</td>
+                <td>150</td>
+                <td>120</td>
+                <td><i class="material-icons" style="cursor:pointer">update</i></td>
+                <td><i class="material-icons">delete</i></td>
+            </tr> -->
+        </table>
+       
+    </div>
+    <script src="./js/manage.js"></script>
+    
+</body>
+
+</html>

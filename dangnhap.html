@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="/css/dangnhap.css" />
+  </head>
+  <body>
+    <section>
+      <div class="form_box">
+        <div class="form_value">
+          <form>
+            <h2>Đăng nhập</h2>
+            <div class="inputbox">
+              <input type="text" class="input-login-username" placeholder="vui lòng nhập email"/>
+            </div>
+            <div class="inputbox">
+              <input type="password" class="input-login-password" placeholder="vui lòng nhập mật khẩu"/>
+            </div>
+            <div class="forget">
+              <label for=""
+                ><input type="checkbox" />Ghi nhớ mật khẩu
+                <a href="#">Quên mật khẩu</a></label>
+            </div>
+           <!-- <button onclick="checkform()" id="btn-register">Đăng nhập</button>-->
+            <a href="index.html" class="" >
+              <button type="submit" class="login__signIButoon">Đăng nhập</button>
+            </a>
+        <!--  <button onclick="btnLogin" type="submit" class="login__signInButton">Đăng Nhập</button> --> 
+            <div class="register">
+              <p>Bạn chưa có tài khoản? <a href="/dangky.html" class="login__registerButton">Đăng ký</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src=".js/dangnhap.html">
+      </script>
+      <!--
+      <script>
+        function checkform(){
+          var user =document.getElementById("user");
+          var pass =document.getElementById("pass");
+          if (user.value !="") {
+            if (user.value.length <4){
+              alert("Vui lòng nhập tên đăng nhập >=4 kí tự");
+              user.focus();
+              return false;
+            }
+          } else {
+              alert("Vui lòng nhập tên đăng nhập");
+                user.focus();
+                return false;
+          }
+          if (pass.value !="") {
+            if (pass.value.length <4){
+              alert("Vui lòng nhập mật khẩu >=2 kí tự");
+              pass.focus();
+              return false;
+            }
+          } else {
+              alert("Vui lòng nhập mật khẩu");
+                  pass.focus();
+                  return false;
+          }
+          if (pass.value !="") {
+            if(pass.value !=pas.value) {
+              alert("Mật khẩu không đúng");
+              pass.focus();
+              return false;
+            }
+          } else {
+              alert("Vui lòng nhập lại mật khẩu");
+              pass.focus();
+              return flase;
+          }
+          var kq = `<h2> Đăng nhập thành công</h2>
+          <p>Tên đăng nhập: <span>`+ user.value + `</span></p>
+          <p>Mật khẩu: <span>` + pass.value + `</span></p>`;
+          document.getElementById("showkq").innerHTML = kq;
+          //return true;
+        }
+      
+      </script> -->
+    </section>
+  </body>
+</html>

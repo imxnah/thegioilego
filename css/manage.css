@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d64d4d;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    max-height: 920px;
+}
+
+.nav {
+    width: 10%;
+    max-width: 100px;
+    border-radius: 18px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0px;
+    height: 80%;
+}
+
+.nav i {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all .25s linear;
+}
+
+.nav i:hover,.active {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.form {
+    width: 25%;
+    height: 80%;
+}
+
+.form div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 18px;
+    flex-direction: column;
+    padding: 48px;
+}
+
+.form div input {
+    display: block;
+    padding: 8px 18px;
+    line-height: 24px;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 18px;
+    color: #050505;
+    margin: 2px;
+    transition: all .25s linear;
+}
+
+.form div input:focus {
+    border: none;
+    background-color: white;
+}
+
+.form div input:focus-visible {
+    outline: 1px solid #ccc;
+}
+.form div button{
+    display: inline;
+    padding:18px 28px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 48px;
+}
+
+.table {
+    width: 65%;
+    height: 80%;
+    border-radius: 18px;
+    background-color: aliceblue;
+}
+
+.table table {
+    width: 100%;
+}
+
+th {
+    padding: 28px 8px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
